@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0}
+html,body{height:100%}
+body{background:#313131;font-size:12px;color:#000;-webkit-text-size-adjust:none}
+body,input,textarea,select,table,button{font-family: 'Noto Sans Gothic', sans-serif, 'Noto Sans KR', sans-serif;}fieldset,li{border:0;vertical-align:top;font-size:10px;}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{color:#000;text-decoration:none}
+
+/* layout */
+.content{position:fixed;top:0;right:0;left:0;height:100%;background-position:50% 50%;-webkit-background-size:cover;background-size:cover; }
+.content:before{display:block;position:absolute;top:-100px;right:0;left:0;bottom:-100px;content:''}
+
+.btn_area{position:relative;left:24%;top:77%;width:52%;height:13%;}
+.btn_1{float:left;display:block;width:46%;height:100%;}
+.btn_2{float:left;display:block;width:46%;height:100%;}
+.blank1{float:left;display:block;width:8%;height:100%;}
+
+.front_area{position:fixed;top:0;right:0;left:0;background-position:50% 50%;-webkit-background-size:cover;background-size:cover}
+.front_area:before{display:block;position:absolute;top:-100px;right:0;left:0;bottom:-100px;content:''}
+.horizontal .front_area:before{top:0;bottom:0}
+.horizontal .front_area .front{display:none}
+
+    /*POPUP*/   
+    .dimmed{position:fixed;top:0;right:0;bottom:0;left:0;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8;z-index:100}
+    
+    .ly_pop{position:fixed;top:5%;right:0;left:0;z-index:110}
+    .ly_cont{position:relative;margin:0 auto;width:370px;height:270px;background:url(https://images.toast.com/toast/s629/angry/web/page/hottracks/pop.png) no-repeat 50% 0;background-size:auto 270px}
+    .close{position:relative;display:block;margin:0 auto;top:236px;width:109px;height:20px;}
+    
+    .ly_pop_2{position:fixed;top:30%;right:0;left:0;z-index:110}
+    .ly_cont_2{position:relative;margin:0 auto;width:100%;height:120px;background:#005ea3}
+    .ly_tit{padding-top:25px;height:30px;line-height:30px;font-size:20px;font-weight:400;color:#fff;text-align:center;}
+    .btn_ly_ok{position:relative;margin:0 auto;top:10px;display:block;width:70px;height:30px;
+        background:#28188a;text-decoration:none;font-size:14px;line-height:30px;color:#fff;text-align:center;
+        box-shadow:0px 3px 0px #1b0d72;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;} 
+
+    @media screen and (max-width:480px) {
+    .btn_area{position:relative;left:23%;top:74%;width:54%;height:11%;}
+    .btn_1{float:left;display:block;width:46%;height:100%;}
+    .btn_2{float:left;display:block;width:46%;height:100%;}
+    .blank1{float:left;display:block;width:8%;height:100%;}
+    }
+
+    @media screen and (min-width:950px) {
+    .btn_area{position:relative;left:17.5%;top:74%;width:65%;height:10.5%;}
+    .btn_1{float:left;display:block;width:46%;height:100%;}
+    .btn_2{float:left;display:block;width:46%;height:100%;}
+    .blank1{float:left;display:block;width:8%;height:100%;}
+
+    }

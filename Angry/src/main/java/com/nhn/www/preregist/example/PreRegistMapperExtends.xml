@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nhn.www.preregist.mapper.PreRegistMapper" >
+
+<select id="getRegistStatus" resultType="com.nhn.www.preregist.bean.PreRegistStatus">
+    select local as language, count(1) as count 
+    from pre_regist
+    group by local
+</select>
+
+</mapper>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nhn.base.coupon.mapper.CouponLogMapper" >
+    <select id="myUsedCouponList" parameterType="java.util.HashMap" resultType="com.nhn.base.coupon.bean.CouponLogExtends">
+    select 
+       cpni.itemName,
+        cpni.event_idx,
+        cnum,
+        regdate,
+        sussType,
+        (select cname from manage_event where idx=cpni.event_idx) as eventName
+    from(   
+    select 
+        event_idx,
+        cnum, 
+        regdate,
+        sussType
+        from manage_event_coupon_log 
+        WHERE 
+        sno = #{sno}            
+        group by cnum  order by regDate desc
+    )a, manage_event_coupon_item cpni
+    where cpni.event_idx = a.event_idx
+    group by cnum
+    order by regdate desc
+    limit #{skip}, #{limit}
+  </select>
+  
+  <select id="myUsedCouponListCount" parameterType="java.util.HashMap" resultType="java.lang.Integer">
+    select count(1)
+		from(
+		select 
+		       cpni.itemName,
+		        cpni.event_idx,
+		        cnum,
+		        regdate,
+		        sussType,
+		        (select cname from manage_event where idx=cpni.event_idx) as eventName
+		        
+		    from(   
+		    select 
+		        event_idx,
+		        cnum, 
+		        regdate,
+		        sussType
+		        from manage_event_coupon_log 
+		        WHERE 
+		        sno = #{sno}          
+		        group by cnum  order by regDate desc
+		    )a, manage_event_coupon_item cpni
+		    where cpni.event_idx = a.event_idx
+		    group by cnum
+		    order by regdate desc
+        )b
+  </select>
+</mapper>

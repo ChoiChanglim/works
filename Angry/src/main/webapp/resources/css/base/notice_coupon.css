@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* reset */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body,input,textarea,select,table{font-family:'돋움',dotum,AppleGothic,sans-serif;font-size:12px}
+img,fieldset{border:0;vertical-align:top}
+address,caption,em{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline;text-decoration:none;}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:none}
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:999px;white-space:nowrap}
+body{position:relative;background:#f3f3f3;}
+#wrap{min-width:480px;max-width:auto;height:100%;margin:0 auto}
+
+
+/*TOP*/
+.footer{position:relative;height:50px;background:url(https://images.toast.com/toast/s629/angry/base/top_bg.png) repeat;background-size:auto 53px;}
+.top{position:relative;display:block;float:right;margin:10px;width:auto;height:30px;}
+.start_bg{display:block;float:left;width:30px;height:30px; background:url(https://images.toast.com/toast/s629/angry/base/top.png) no-repeat;background-size:78px 30px;}
+.top p{display:block;float:left;padding:0 5px;background:#fff;font-size:14px;color:#79706e;line-height:30px;background:url(https://images.toast.com/toast/s629/angry/base/top.png) repeat;background-size:500px 30px; background-position:-150px 0;}
+.end_bg{display:block;float:left;width:30px;height:30px; background:url(https://images.toast.com/toast/s629/angry/base/top.png) no-repeat;background-size:78px 30px; background-position:-48px 0;}
+.list{position:relative;display:block;float:left;margin:10px;width:auto;height:30px;}
+.list .start_bg{display:block;float:left;width:30px;height:30px; background:url(https://images.toast.com/toast/s629/angry/base/list.png) no-repeat;background-size:78px 30px;}
+.list p{display:block;float:left;padding:0 5px;background:#fff;font-size:14px;color:#79706e;line-height:30px;background:url(https://images.toast.com/toast/s629/angry/base/list.png) repeat;background-size:500px 30px; background-position:-150px 0;}
+
+
+
+/* 공지 목록 */
+.content.main{padding-top:0px;}
+.notice{position:relative;box-shadow: 0px 1px 3px #aaaaaa; }
+.lst_ntc{position:relative;}
+.lst_ntc ul{position:relative;overflow:hidden;list-style:none}
+.lst_ntc li{position:relative;vertical-align:top;list-style:none}
+.lst_ntc li:first-child{border-top:0;margin-top:-20px}
+.lst_ntc a{display:block;height:24px;padding:10px 0 20px 15px;background:#fff;font-size:14px;color:#79706e;letter-spacing:-1px;line-height:24px}
+.span{color:#79706e;}
+.category_event{
+    border: 2px solid #c02a30;
+    -webkit-border-radius: 10px; /* for Firefox */
+    -moz-border-radius: 10px; /* for Safari and chrome */
+    border-radius: 30px; /* CSS3 */
+    behavior: url(border-radius.htc); /* for IE */
+    color:#c02a30;
+    text-indent:0px;
+    display:inline-block;
+    font-family:Arial Black;
+    font-size:16px;
+    line-height:30px;
+    font-weight:bold;
+    font-style:normal;
+    width:80px;height:30px;
+    text-decoration:none;
+    text-align:center;
+    margin-right:10px;}
+.category_notice{
+    border: 2px solid #3578cb;
+    -webkit-border-radius: 10px; /* for Firefox */
+    -moz-border-radius: 10px; /* for Safari and chrome */
+    border-radius: 30px; /* CSS3 */
+    behavior: url(border-radius.htc); /* for IE */
+    color:#3578cb;
+    text-indent:0px;
+    display:inline-block;
+    font-family:Arial Black;
+    font-size:16px;
+    line-height:30px;
+    font-weight:bold;
+    font-style:normal;
+    width:80px;height:30px;
+    text-decoration:none;
+    text-align:center;
+    margin-right:10px;}
+.date{position:absolute;top:15px;right:15px;color:#949494}
+.line{width:100%;height:1px;background:url(https://images.toast.com/toast/s629/angry/base/line.png) repeat-x;}
+.notice .btn_ntc{display:block;width:auto;height:4px;background-color:#c02a30;}
+.btn_more{position:relative;display:block;top:0;margin:0 auto;width:102px; height:29px;background:url(https://images.toast.com/toast/s629/angry/base/more_btn.png) no-repeat; background-size:102px 29px}
+.btn_close{position:relative;display:block;top:0;margin:0 auto;width:102px; height:29px;background:url(https://images.toast.com/toast/s629/angry/base/close_btn.png) no-repeat; background-size:102px 29px}
+.btn_more p{position:relative;display:block;top:5px;margin:0 auto;width:60px;height:20px;font-size:14px;text-align:left;color:#fff;font-weight:bold;letter-spacing:-1px;}
+.btn_close p{position:relative;display:block;top:5px;margin:0 auto;width:40px;height:20px;font-size:14px;text-align:left;color:#fff;font-weight:bold;letter-spacing:-1px;}
+
+
+/* 이벤트 배너 */
+.event{padding-bottom:15px;}
+.lst_bn{margin-top:35px;margin-left:10px;margin-right:10px;}
+.lst_bn li{margin-top:6px;box-shadow:0 1px 4px #929292;list-style:none}
+.lst_bn li:first-child{margin-top:0;}
+.lst_bn img{width:100%;height:auto;}
+.new{position:absolute;width:10%;height:auto;}
+.hot{position:absolute;width:10%;height:auto;}
+
+
+/* 공지 게시물 */
+.view{position:relative}
+.board{position:relative; }
+.board .category p{display:block;height:24px;padding:10px 0 20px 15px;background:#fff;font-size:14px;color:#79706e;letter-spacing:-1px;line-height:24px}
+.board .date{position:absolute;top:15px;right:15px;color:#79706e;display:block;height:24px;font-size:14px;letter-spacing:-1px;line-height:24px}
+.board .line{width:100%;height:1px;background:url(https://images.toast.com/toast/s629/angry/base/line.png) repeat-x;box-shadow: 0px 1px 3px #aaaaaa;}
+.content_text{padding:13px 15px;background-color:#fff}
+.content_text p{position:relative;display:block;min-height:24px;font-size:14px;line-height:24px;padding:15px;color:#79706e;}
+.content_text em{color:#c02a30; font-weight:bolder;}
+.content_text img{width:100%;height:auto;}
+
+
+/* 쿠폰 페이지 */
+.coupon{position:relative;min-width:480px;max-width:630px;margin:0 auto;background:#fff;}
+.entry{widht:630px;height:235px;background:url(https://images.toast.com/toast/s629/angry/base/coupon_bg.jpg) no-repeat 50% 0;background-size:667px auto;margin:0 auto;}
+.entry .title{position:relative;top:45px;left:40px;font-size:10px;color:#79716f;font-weight:bolder;}
+.title em{color:#c12a31;}
+.entry .tt{position:relative;top:60px;left:40px;font-size:14px;color:#787878;}
+.tt em{color:#9f1814;}
+.entry .entry_input{position:relative;width:630px;margin:0 auto;top:50px;}
+.entry_input input{width:218px;height:60px;margin-left:40px;border:1px solid #cbc0c0;background-color:#fff;
+    -webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+    font-size:20px;font-weight:bold;line-height:45px;text-align:center}
+.btn_entry{position:absolute;top:0px;left:265px;width:auto;height:60px;
+    box-shadow:inset 0px -5px 0px 0px #9d161b;
+    background-color:#c02a30;
+    -webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+    text-indent:0px;
+    display:inline-block;
+    color:#fff;
+    font-family:Arial Black;
+    font-size:22px;
+    font-weight:bolder;
+    padding:0 20px 0 20px;
+    text-align:center;
+    line-height:55px;}
+.coupon_notice{position:relative;width:100%;padding-bottom:20px;border-top:1px solid #dddddd;background-color:#f3f3f3}
+.coupon_notice .text_box{position:relative;width:545px;margin:0 auto;font-size:14px;color:#989898;line-height:24px;}
+.coupon_notice .tit{margin-top:20px;font-size:15px;color:#79706e}
+.coupon_notice ul{margin-top:6px;margin-left:18px;list-style:disc !important;}
+.btn_cpnview{position:absolute;top:0px;right:15px;width:auto;height:37px;
+    box-shadow:inset 0px 1px 0px 0px #9f815e;
+    background:#79706e;
+    -webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+    text-indent:0px;
+    display:inline-block;
+    color:#fff;
+    font-family:Arial Black;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    line-height:37px;
+    padding:0 20px 0 20px; 
+    text-decoration:none;
+    text-align:center
+    }
+
+.entry2{widht:630px;height:235px;background:url(https://images.toast.com/toast/s629/angry/base/coupon_bg.jpg) no-repeat 50% 0;background-size:667px auto;margin:0 auto;}
+.entry2 .title{position:relative;top:35px;left:40px;font-size:10px;color:#79716f;font-weight:bolder;}
+.entry2 .tt{position:relative;top:50px;left:40px;font-size:14px;color:#787878;}
+.entry2 .entry_input{position:relative;width:630px;margin:0 auto;top:40px;}
+    
+    
+/* 쿠폰 목록 */
+.view{background:#c3c3c3}
+.coupon_view{position:relative;min-width:480px;max-width:630px;padding:20px 10px 50px;margin:0 auto;background:#c3c3c3}
+.tit_cpn{position:relative;display:block;height:10px;font-size:20px;color:#251c6d;font-weight:bolder;}
+.lst_cpn{position:relative;margin-top:30px; border:1px solid #757575;background:#e6e6e6;-webkit-border-radius: 8px; /* for Firefox */-moz-border-radius: 8px; /* for Safari and chrome */border-radius: 8px; /* CSS3 */}
+.lst_cpn li{position:relative;border-top:1px solid #c7c0b6;vertical-align:top;list-style:none;}
+.lst_cpn li:first-child{border-top:0}
+.lst_cpn li:last-child{padding-bottom:10px}
+.lst_cpn p{overflow:hidden;display:block;min-height:24px;font-size:14px;color:#555555;line-height:24px;
+-webkit-border-top-left-radius: 5px; /* for Firefox */-moz-border-radius-topleft: 5px; /* for Safari and chrome */border-top-left-radius: 5px; /* CSS3 */;-webkit-border-top-right-radius: 5px; /* for Firefox */-moz-border-radius-topright: 5px; /* for Safari and chrome */border-top-right-radius: 5px; /* CSS3 */}
+.lst_cpn li:first-child p{background:#5d86ba;color:#fff;padding-top:13px;}
+.lst_cpn .category{font-weight:bold}
+.cpn_date,.cpn_tit,.cpn_item,.cpn_nb,.cpn_state{display:inline-block;padding:10px 0;text-align:center;vertical-align:middle}
+.lst_cpn li:first-of-type span{padding:0 0 10px}
+.lst_cpn li:last-of-type span{padding:10px 0 0}
+.cpn_date{width:14%;line-height:16px}
+.lst_cpn li:first-of-type .cpn_date{line-height:24px}
+.cpn_tit{width:34%}
+.cpn_item{width:25%}
+.cpn_nb{width:10%;line-height:16px}
+.cpn_state{width:15%}
+.btn_cpnentry{position:absolute;top:10px;right:10px;width:auto;height:37px;
+    border:1px solid #6D7580;
+    box-shadow:0px 2px 2px rgba(57,64,73,0.3);
+    background:#7f8792;
+    -webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+    text-indent:0px;
+    display:inline-block;
+    color:#fff;
+    font-family:Arial Black;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    line-height:37px;
+    padding:0 20px 0 20px; 
+    text-decoration:none;
+    text-align:center
+    }
+.paging{position:absolute;bottom:15px;left:0;right:0;text-align:center;}
+.paging_inner{display:inline-block;position:relative;padding:0 23px}
+.paging a,.paging strong{overflow:hidden;display:inline-block;width:40px;height:20px;font-size:16px;font-weight:bolder;color:#878787;line-height:20px;text-align:center}
+.paging a:hover{text-decoration:none}
+.paging .on{color:#c02a30;font-weight:bold;}
+.paging .btn_prev,.paging .btn_next{position:absolute;top:0;width:11px;height:17px}
+.paging .btn_prev{top:3px;left:0;width:9px; height:15px;background:url(https://images.toast.com/toast/s629/angry/base/coupon_list_left.png) no-repeat; background-size:9px 15px}
+.paging .btn_next{top:3px;right:0;width:9px; height:15px;background:url(https://images.toast.com/toast/s629/angry/base/coupon_list_right.png) no-repeat; background-size:9px 15px}
+
+    
+/* 팝업 */
+.dimmed{position:fixed;top:0;bottom:0;left:0;right:0;z-index:20;width:100%;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8}
+.pop_content{width:500px;margin:-104px 0 0 -270px;;position:fixed;top:50%;left:50%;z-index:30;padding:20px;padding-top:22px;background-color:#fff;font-size:15px;font-weight:bold;color:#79706e;letter-spacing:-2px;text-align:center}
+.pop_content .tit{padding:0 10px 0 10px; font-size:20px;font-weight:bolder;color:#c02a30;line-height:25px}
+.pop_content p{padding:0 10px 0 10px; margin-top:5px}
+.btn_check{background:#c02a30; margin-top:20px;
+    -webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+    text-indent:0px;
+    display:inline-block;
+    color:#fff;
+    font-family:Arial Black;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    line-height:37px;
+    padding:0 20px 0 20px;
+    text-decoration:none;
+    text-align:center}

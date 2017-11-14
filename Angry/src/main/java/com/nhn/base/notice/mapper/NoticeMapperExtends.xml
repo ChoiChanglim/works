@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nhn.base.notice.mapper.NoticeMapper" >
+    <resultMap type="com.nhn.base.notice.bean.PopupNotice" id="popupNoticeMap">
+        <id column="idx" property="key" jdbcType="INTEGER" />
+	    <result column="Sdate" property="viewStartDate" jdbcType="TIMESTAMP" />
+	    <result column="Edate" property="viewEndDate" jdbcType="TIMESTAMP" />
+	    <result column="eventSdate" property="eventStartDate" jdbcType="TIMESTAMP" />
+        <result column="eventEdate" property="eventEndDate" jdbcType="TIMESTAMP" />
+        <result column="imgAddr" property="imgAddr" jdbcType="VARCHAR" />
+        <result column="linkAddr" property="linkAddr" jdbcType="VARCHAR" />
+        <result column="newPopup" property="newPopup" jdbcType="INTEGER" />
+        <result column="eventDel" property="eventDel" jdbcType="INTEGER" />
+        <result column="viewNation" property="viewNation" jdbcType="INTEGER" />
+        <result column="viewLevel" property="viewLevel" jdbcType="INTEGER" />
+        <result column="viewSLevel" property="viewSLevel" jdbcType="INTEGER" />
+        <result column="viewELevel" property="viewELevel" jdbcType="INTEGER" />
+        <result column="viewJoin" property="viewJoin" jdbcType="INTEGER" />
+        <result column="viewSJoin" property="viewSJoin" jdbcType="INTEGER" />
+        <result column="viewEJoin" property="viewEJoin" jdbcType="INTEGER" />
+    </resultMap>
+    <!-- 공지팝업 json -->
+    <select id="selectPopupNotice" parameterType="java.util.HashMap" resultMap="popupNoticeMap">
+        select 
+            idx,
+            n.Sdate,
+            n.Edate,
+            n.eventSdate,
+            n.eventEdate,
+		    sub.imgAddr,
+		    sub.linkAddr,
+		    sub.newPopup,
+		    n.eventDel,
+		    n.viewNation,
+		    
+		    n.viewLevel,
+            n.viewSLevel,
+            n.viewELevel,
+            
+            n.viewJoin,
+            n.viewSJoin,
+            n.viewEJoin
+            
+            
+		    		
+		from manage_event_notice as n
+		inner join manage_event_notice_sub as sub
+		where 
+		n.idx = sub.notice_idx
+		and n.del=0
+		and sub.del = 0
+		<![CDATA[
+		and n.Sdate < now() and n.Edate > now()
+		]]>
+		and sub.sub_idx = #{languageIndex,jdbcType=INTEGER}		
+		and n.idxType = #{idx_type,jdbcType=CHAR}
+		order by n.viewIdx asc
+    </select>
+    
+    <select id="selectNoticeEventByIdx" parameterType="java.util.HashMap" resultType="com.nhn.base.notice.bean.Notice">
+        select 
+           idx,
+           idxType,
+           type1,         
+           Sdate,
+           Edate,
+           mainTitle,
+           
+           
+           sub.title,
+           sub.content,   
+           sub.linkAddr,
+           sub.imgAddr,
+           viewNation,
+           viewType,
+           viewOS,
+           viewIdx,
+           lastDate,
+           regDate,
+           eventSdate,
+           eventEdate,
+            sub.del, 
+        
+            a.eventDel,
+            a.visit
+            from(
+                select 
+                      idx,
+                      idxType,
+                      type1,
+                      Sdate,
+                      Edate,     
+                      mainTitle,
+                      title,
+                      content,                      
+                      imgAddr,
+                      linkAddr,                 
+                      viewNation,
+                      viewType,                      
+                      viewOS,
+                      viewIdx,
+                      lastDate,
+                      eventSdate,
+                      eventEdate,
+                      regDate,                      
+              
+                      eventDel,
+                      visit
+                      
+                                   
+                  from manage_event_notice a
+                  
+                   WHERE (  
+                        idx = #{idx}                                                          
+                        )       
+                   
+            )a, manage_event_notice_sub sub
+            where a.idx = sub.notice_idx
+            and sub.sub_idx=#{lang_idx} 
+    </select>
+    
+    
+    <select id="selectLoadingImgList" parameterType="java.util.HashMap" resultMap="popupNoticeMap">
+        select 
+            idx,
+            n.Sdate,
+            n.Edate,
+            n.eventSdate,
+            n.eventEdate,
+            sub.imgAddr,
+            sub.linkAddr,
+            sub.newPopup,
+            n.eventDel,
+            n.viewNation,
+            
+            n.viewLevel,
+            n.viewSLevel,
+            n.viewELevel,
+            
+            n.viewJoin,
+            n.viewSJoin,
+            n.viewEJoin
+            
+            
+                    
+        from manage_event_notice as n
+        inner join manage_event_notice_sub as sub
+        where 
+        n.idx = sub.notice_idx
+        and n.del=0
+        and sub.del = 0
+        <![CDATA[
+        and n.Sdate < now() and n.Edate > now()
+        ]]>
+        and sub.sub_idx = #{languageIndex,jdbcType=INTEGER}     
+        and n.idxType = #{idx_type,jdbcType=CHAR}
+        order by n.viewIdx asc
+    </select>
+    
+    
+</mapper>

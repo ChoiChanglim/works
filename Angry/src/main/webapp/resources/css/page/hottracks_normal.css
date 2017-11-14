@@ -1,0 +1,12 @@
+    body,div{margin:0;padding:0}
+    html,body{height:100%;background-color:#fffde5}
+    .wrap{margin:0 auto;}
+    .img{position:relative;height:2600px;background:url(https://images.toast.com/toast/s629/angry/web/page/hottracks/hottracksevent_web.jpg) no-repeat 50% 0;}
+    .btn{position:relative;margin:0 auto;top:931px;width:1009px;height:125px;}
+    .btn_offline{float:left;width:475px;height:125px;cursor:pointer;}
+    .btn_online{float:left;margin-left:59px;width:475px;height:125px;cursor:pointer;}
+    /*POPUP*/   .dimmed{position:fixed;top:0;right:0;bottom:0;left:0;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8;z-index:100}
+
+    .ly_pop{position:fixed;top:15%;right:0;left:0;z-index:110}
+    .ly_cont{position:relative;margin:0 auto;width:1100px;height:800px;background:url(https://images.toast.com/toast/s629/angry/web/page/hottracks/pop.png) no-repeat 50% 0;}
+    .close{position:relative;display:block;margin:0 auto;top:698px;width:326px;height:62px;cursor:pointer;}

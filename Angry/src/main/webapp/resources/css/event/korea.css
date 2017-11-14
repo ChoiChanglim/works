@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0}
+html,body{height:100%}
+body{background:#fff;font-size:12px;color:#000;-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table,pre{font-family:sans-serif}
+fieldset,li{border:0;vertical-align:top}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+address,caption,em{font-style:normal}
+
+
+#wrap{margin:auto 0;}
+.inner{width:480px;height:auto;margin:0 auto;}
+
+/*header*/
+.header{position:relative;height:277px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_header.jpg) no-repeat 50% 0;background-size:auto 277px;background-color:#041932}
+.header .date{display:block;margin:0 auto;width:129px;height:21px;text-align:center;font-size:10px;line-height:21px;color:#fff;}
+.header .header_bg{position:relative;top:230px;width:100%;height:26px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/header_bg.png) repeat-x 50% 0;background-size:auto 26px}
+
+/*container*/
+.container{position:relative;margin:0 auto;width:100%;height:auto;background-color:#11485f;}
+.container .count_area{width:330px;height:30px;padding-top:20px;margin:0 auto;}
+.container .count_area_over{width:380px;height:30px;padding-top:20px;margin:0 auto;}
+.count_inner ul{text-align:center;float:left;}
+.count_inner li{text-align:center;display:inline-block;height:30px;left:0;right:0;}
+.count_left{
+width:170px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_count_left.png) no-repeat 50% 0;background-size:auto 30px;}
+.count_right{width:80px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/count_right.png) no-repeat 50% 0;background-size:auto 30px;}
+.count_area .count_num{width:70px;text-align:center;font-size:25px;font-weight:bolder;line-height:37px;color:#fff;}
+.count_area_over .count_num{width:120px;text-align:center;font-size:25px;font-weight:bolder;line-height:37px;color:#fff;}
+
+
+
+.reward_area{position:relative;width:480px;height:310px;margin:0 auto;top:40px;}
+.g_area{position:relative;width:480px;height:115px;margin:0 auto;}
+[class^="gift_"]{position:relative;display:block;float:left;overflow:hidden;width:115px;height:115px;}
+.g_area .gift_1{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_reward_500.png) no-repeat 50% 0;background-size:auto 232px;margin-right:6.5px;}
+.g_area .gift_2{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_reward_300.png) no-repeat 50% 0;background-size:auto 232px;margin-right:6.5px;}
+.g_area .gift_3{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_reward_150.png) no-repeat 50% 0;background-size:auto 232px;margin-right:6.5px;}
+.g_area .gift_4{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_150_r.png) no-repeat 50% 0;background-size:auto 232px;}
+
+.g_area .gift_1.on{background-position:bottom !important}
+.g_area .gift_2.on{background-position:bottom !important}
+.g_area .gift_3.on{background-position:bottom !important}
+.g_area .gift_4.on{background-position:bottom !important}
+
+.i_area{position:relative;width:480px;height:98px;margin:0 auto;padding-top:30px;}
+[class^="ingame_"]{position:relative;display:block;float:left;overflow:hidden;width:93px;height:95px;}
+.i_area .ingame_1{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_100.png) no-repeat 50% 0;background-size:auto 190px;margin-right:3.5px;}
+.i_area .ingame_2{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_60.png) no-repeat 50% 0;background-size:auto 190px;margin-right:3.5px;}
+.i_area .ingame_3{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_50.png) no-repeat 50% 0;background-size:auto 190px;margin-right:3.5px;}
+.i_area .ingame_4{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_40.png) no-repeat 50% 0;background-size:auto 190px;margin-right:3.5px;}
+.i_area .ingame_5{background:url(https://images.toast.com/toast/s629/angry/web/event/flower/reward_30.png) no-repeat 50% 0;background-size:auto 190px;}
+
+.i_area .ingame_1.on{background-position:bottom !important}
+.i_area .ingame_2.on{background-position:bottom !important}
+.i_area .ingame_3.on{background-position:bottom !important}
+.i_area .ingame_4.on{background-position:bottom !important}
+.i_area .ingame_5.on{background-position:bottom !important}
+
+
+
+.prizearea{position:relative;width:480px;height:auto;margin:0 auto;padding-bottom:25px;}
+.prizearea .inner{position:relative;width:460px;height:auto;padding:10px;display:block;background:#073649;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+.prizearea .prize_title{position:relative;display:block;width:460px;height:17px;margin:0 auto;padding-top:10px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/kr_prize.png) no-repeat 50% 0;background-size:auto 17px;}
+
+.prizearea .no{text-align:center;font-size:11px;line-height:15px;color:#4dacd4;padding-bottom:5px;}
+
+.prizebox{width:460px;height:auto;margin:0 auto;}
+.prizearea ul{text-align:center;}
+.prizearea li{display:inline-block;}
+[class^="prize_"]{position:relative;display:block;margin:0 auto;overflow:hidden;width:150px;padding:0 0 5px;}
+[class^="prize_"] em{display:block;width:134px;padding:2px 8px;background:#217698;
+	text-align:center;font-size:12px;font-weight:600;color:#00293a;
+	-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+[class^="prize_"] span{width:50px;text-align:center;font-size:10px;font-weight:600;color:#42a4cb;}
+
+
+/*footer*/
+.footer_area{position:relative;width:100%;height:270px;;background:#438f94;}
+.footer_bg{position:relative;height:26px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/footer_bg.png) repeat-x 50% 0;background-size:auto 26px}
+.notice{position:relative;width:480px;margin:0 auto;}
+.statement{position:relative;top:30px;width:291px;height:35px;margin:0 auto;
+text-align:center;font-size:14px;line-height:35px;color:#fff;
+-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;
+background:url(https://images.toast.com/toast/s629/angry/web/event/flower/notice_block.png) no-repeat 50% 0;background-size:auto 35px;}
+.statement em{font-weight:bold;color:#fff600;}
+.notice ul{position:relative;margin-top:45px;text-align:center;font-size:11px;font-weight:600;line-height:25px;color:#01373a;}
+.notice .red{color:#7a0101 !important;line-height:12px;}
+.notice .blue{line-height:12px !important;}
+.notice .blue em{font-size:10px;color:#00285e !important;}
+
+
+/*POPUP*/
+.ly_cont_gif{position:fixed;top:13%;right:0;left:0;z-index:110}
+.pop_gif{position:relative;margin:0 auto;width:204px;height:200px;background:url(https://images.toast.com/toast/s629/angry/web/event/flower/Petal.gif) no-repeat 50% 0;background-size:auto 200px;}
+.ly_cont_gif .gif_tit{height:30px;line-height:30px;font-size:14px;font-weight:400;color:#fff;text-align:center;}
+
+.dimmed{position:fixed;top:0;right:0;bottom:0;left:0;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8;z-index:100}
+
+.ly_pop{position:fixed;top:15%;right:0;left:0;z-index:110}
+.ly_cont{position:relative;margin:0 auto;width:100%;height:160px;background:#005ea3}
+.ly_tit{padding-top:25px;height:30px;line-height:30px;font-size:20px;font-weight:400;color:#fff;text-align:center;}
+.ly_txt{height:20px;line-height:20px;font-size:15px;color:#E7DE00;text-align:center;}
+.btn_area{position:relative;margin:0 auto;width:150px;height:160px;}
+.btn_no{position:relative;float:left;margin:0 auto;top:20px;display:block;width:70px;height:30px;
+	background:#28188a;text-decoration:none;font-size:14px;line-height:30px;color:#fff;text-align:center;
+	box-shadow:0px 3px 0px #1b0d72;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}
+.btn_ok{position:relative;float:left;left:10px;margin:0 auto;top:20px;display:block;width:70px;height:30px;
+	background:#28188a;text-decoration:none;font-size:14px;line-height:30px;color:#fff;text-align:center;
+	box-shadow:0px 3px 0px #1b0d72;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}
+.btn_ly_ok{position:relative;margin:0 auto;top:20px;display:block;width:70px;height:30px;
+	background:#28188a;text-decoration:none;font-size:14px;line-height:30px;color:#fff;text-align:center;
+	box-shadow:0px 3px 0px #1b0d72;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}

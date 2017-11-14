@@ -1,0 +1,23 @@
+    body,div{margin:0 auto;padding:0}
+    html,body{margin:0 auto;height:100%;background-color:#42b8ff}
+    .wrap{margin:0 auto;}
+    .img{position:relative;margin:0 auto;height:1300px;background:url(https://images.toast.com/toast/s629/angry/web/page/hottracks/hottracksevent.jpg) no-repeat 50% 0;background-size:auto 1300px}
+    .btn{position:relative;margin:0 auto;top:465px;width:505px;height:63px;}
+    .btn_offline{float:left;width:238px;height:63px;}
+    .btn_online{float:left;margin-left:29px;width:238px;height:63px;}
+    /*POPUP*/   .dimmed{position:fixed;top:0;right:0;bottom:0;left:0;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8;z-index:100}
+
+    .ly_pop{position:fixed;top:5%;right:0;left:0;z-index:110}
+    .ly_cont{position:relative;width:370px;height:270px;background:url(https://images.toast.com/toast/s629/angry/web/page/hottracks/pop.png) no-repeat 50% 0;background-size:auto 270px}
+    .close{position:relative;display:block;margin:0 auto;top:236px;width:109px;height:20px;}
+    @media screen and (max-width:480px) {
+    .wrap{zoom:0.8;}
+    .ly_pop{zoom:0.8;}
+    }
+    @media screen and (min-width:800px) {
+    .wrap{zoom:1.5;}
+    .ly_pop{zoom:1.5;}
+    }
+    
+    
+    

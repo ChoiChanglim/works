@@ -1,0 +1,147 @@
+﻿@charset "utf-8";
+
+/* reset */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body,input,textarea,select,table{font-family:'돋움',dotum,AppleGothic,sans-serif;font-size:12px}
+img,fieldset{border:0;vertical-align:top}
+address,caption,em{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline;text-decoration:none;}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:none}
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:999px;white-space:nowrap}
+body{position:relative;background:#f3f3f3;}
+#wrap{min-width:480px;max-width:667px;max-width:auto;height:100%;margin:0 auto}
+
+
+/* 쿠폰 페이지 */
+.coupon{position:relative;margin:0 auto;background:#fff;}
+.entry{widht:667px;height:410px;background:url(https://images.toast.com/toast/s629/angry/web/cbt/img_bg.jpg) no-repeat 50% 0;background-size:667px auto;margin:0 auto;}
+
+.entry .entry_input{position:relative;width:100%;margin:0 auto;top:260px;}
+.entry_input input{width:245px;height:53px;margin-left:65px;border:1px solid #565656;background-color:#fff;
+	-webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+	font-size:20px;font-weight:bold;line-height:45px;text-align:center}
+	
+.btn_entry{position:absolute;top:0px;left:318px;width:auto;height:58px;
+	box-shadow:inset 0px -5px 0px 0px #9d161b;
+	background-color:#c02a30;
+	-webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+	text-indent:0px;
+	display:inline-block;
+	color:#fff;
+	font-family:Arial Black;
+	font-size:22px;
+	font-weight:bolder;
+	padding:0 20px 0 20px;
+	text-align:center;
+	line-height:55px;}
+	
+.agree{position:relative;overflow:hidden;width:467px;height:23px;top:270px;left:10%}
+.agree .check{position:relative;top:-2px;float:left;width:24px;height:24px;background:url(https://images.toast.com/toast/s629/woopang/web_resource/event/gift/spot_sec.png) no-repeat -48px 0;cursor:pointer;}
+.agree .check.on{background-position:-73px 0px}
+.agree .tt{float:left;width:280px;height:24px;color:#eedd87;font-size:13.5px;line-height:23px;}
+.agree .agree_view{
+    height: 24px;
+    color: #eedd87;
+    font-size: 13.5px;
+    line-height: 20px;
+    font-weight:bold;
+}
+.tt em{font-weight:bolder;}
+
+/* 팝업 */
+.dimmed{position:fixed;top:0;bottom:0;left:0;right:0;z-index:20;width:100%;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8}
+.lypop{position:fixed;top:10%;right:0;left:0;z-index:110;margin:0 auto;width:100%;
+background:#fff;z-index:100;}
+.pop_content{top:50%;left:50%;padding:40px;text-align:center;z-index:30;}
+.pop_content .tit{padding:0 10px 0 10px;font-size:3vw;font-weight:bolder;color:#c02a30;line-height:41px}
+.pop_content .tt{padding:0 10px 0 10px; font-size:12px;color:#B1B1B1;line-height:15px}
+.pop_content .ttt{padding:0 10px 0 10px; margin-top:8px;font-size:2vw;}
+
+[class^="btn_check"]{
+	background:#c02a30; margin-top:20px;
+	-webkit-border-radius: 8px; /* for Firefox */
+    -moz-border-radius: 8px; /* for Safari and chrome */
+    border-radius: 8px; /* CSS3 */
+	text-indent:0px;
+	display:inline-block;
+	color:#fff;
+	font-family:Arial Black;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:37px;
+	padding:0 20px 0 20px;
+	text-decoration:none;
+	text-align:center}
+.btn_check2{background:#909090 !important;}
+.btn_check3{background:#c02a30 !important;}
+.btn_check4{background:#c02a30 !important;}
+
+@media screen and (max-width:570px) {
+.entry{widht:480px;height:410px;background:url(https://images.toast.com/toast/s629/angry/web/cbt/img_bg.jpg) no-repeat 50% 0;background-size:480px auto;margin:0 auto;margin-left:10px}
+.entry .entry_input{top:185px;margin-left:10px;}
+.entry_input input{width:200px;height:45px;}
+.btn_entry{position:absolute;top:0px;left:270px;width:auto;height:48px;
+    font-size:18px;
+	padding:0 20px 0 20px;
+	line-height:46px;}
+.agree{top:190px;margin-left:12px;}
+.agree .tt{float:left;width:220px;height:24px;color:#eedd87;font-size:11px;line-height:23px;}
+.agree .agree_view{
+    height: 24px;
+    color: #eedd87;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight:bold;
+}
+}
+
+@media screen and (min-width:1000px) {
+#wrap{max-width:100%;height:100%;margin:0 auto}
+.entry{widht:100%;height:768px;background:url(https://images.toast.com/toast/s629/angry/web/cbt/img_bg.jpg) no-repeat 50% 0;background-size:1024px auto;margin:0 auto;}
+.entry .entry_input{top:400px;margin-left:-34px;}
+.entry_input input{width:350px;height:72px;margin-left:155px;}
+.btn_entry{position:absolute;top:0px;left:512px;width:auto;height:75px;
+    font-size:27px;
+	font-weight:bolder;
+	padding:0 20px 0 20px;
+	line-height:70px;}
+.agree{top:410px;margin-left:50px;}
+.agree .tt{float:left;width:300px;height:24px;color:#eedd87;font-size:15px;line-height:20px;}
+.agree .agree_view{
+    height: 24px;
+    color: #eedd87;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight:bold;
+}
+}
+
+@media screen and (min-width:1300px) {
+#wrap{max-width:100%;height:100%;margin:0 auto}
+.entry{widht:100%;height:820px;background:url(https://images.toast.com/toast/s629/angry/web/cbt/img_bg3.jpg) no-repeat 50% 0;background-size:1024px auto;margin:0 auto;}
+.entry .entry_input{top:300px;margin-left:173px;}
+.entry_input input{width:350px;height:60px;margin-left:155px;}
+.btn_entry{position:absolute;top:0px;left:512px;width:auto;height:65px;
+    font-size:27px;
+	font-weight:bolder;
+	padding:0 20px 0 20px;
+	line-height:60px;}
+.agree{top:310px;margin-left:215px;}
+.agree .tt{float:left;width:300px;height:24px;color:#eedd87;font-size:15px;line-height:20px;}
+.agree .agree_view{
+    height: 24px;
+    color: #eedd87;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight:bold;
+}
+}
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 기본 레이아웃 -->
+    <definition name="layout" template="/WEB-INF/jsp/layout/basic/layout.jsp">
+        <put-attribute name="common_header" value="/WEB-INF/jsp/layout/header/common_header.jsp" />     
+        <put-attribute name="body" value="" />
+    </definition>
+    <definition name="coupon/*.nhn" extends="layout"> 
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/header/header_notice.jsp" />     
+        <put-attribute name="body" value="/WEB-INF/jsp/coupon/{1}.jsp" />
+    </definition>
+    <definition name="notice/*.nhn" extends="layout"> 
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/header/header_notice.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/notice/{1}.jsp" />
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry location="D:\NHNEnt\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar" />
+    <context id="Angry">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.161.142.74:13306/s629_angry_event" userId="s629web" password="rpdlatkdjqqn!@#" />
+        <javaModelGenerator targetPackage="com.nhn.www.preregist.bean" targetProject="Angry" />
+        <sqlMapGenerator targetPackage="com.nhn.www.sns.example" targetProject="Angry" />
+        <javaClientGenerator targetPackage="com.nhn.www.sns.mapper" targetProject="Angry" type="XMLMAPPER" />
+        <table schema="sns_share" tableName="sns_share" domainObjectName="SnsShare">
+            <!-- <columnOverride column="ctype" javaType="java.lang.Integer" />
+            <columnOverride column="del" javaType="java.lang.Integer" /> -->
+        </table>
+    </context>
+</generatorConfiguration>
+ 

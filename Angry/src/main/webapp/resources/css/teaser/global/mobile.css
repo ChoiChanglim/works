@@ -1,0 +1,359 @@
+﻿@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0}
+html,body{height:100%;margin:0 auto;}
+body{background:#19304F;font-size:12px;color:#000;-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table,pre{font-family:sans-serif}
+fieldset,li{border:0;vertical-align:middle}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{text-decoration:none}
+a{text-decoration:none}
+.blind{overflow:hidden;position:absolute;top:0;left:-999px;width:1px;height:1px;font-size:1px;text-indent:-999px}
+.btn{overflow:hidden;position:absolute;text-indent:-9999px}
+
+/*common*/
+.container{overflow:hidden;margin:50px auto 0}
+.sec_game,.foot_area{position:relative}
+.inner{position:relative;width:320px;height:100%;margin:0 auto}
+
+#sec_download{position:absolute;top:-90px;left:0;width:1px;height:1px;background:#000000}
+#sec_sns{position:absolute;top:-100px;left:0;width:1px;height:1px}
+#sec_overview{position:absolute;top:-80px;left:0;width:1px;height:1px}
+
+/*Language*/
+.header{position:fixed;top:0;left:50%;z-index:50;width:640px;height:75px;margin-left:-320px;background:#fff url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_bg_header.png) no-repeat 0 30px;background-size:auto 45px;transform:translatez(0);-webkit-transform:translatez(0)}
+.top_menu{width:320px;height:30px;margin:0 auto}
+.top_menu:after{display:block;clear:both;content:''}
+.select_area{position:relative;z-index:20;float:right;margin-top:3px;text-align:left}
+.select_area a{display:block;width:72px;height:23px;padding:0 12px;line-height:23px;font-size:10px;color:#7c4b10;}
+.selected{display:block;border:1px solid #7c4b10;border-radius:30px;}
+.ico_arrow{position:absolute;top:9px;right:14px;width:11px;height:6px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/ico_arrow.png) no-repeat;background-size:auto 12px;text-indent:-9999px}
+.select_lst{display:none;position:absolute;top:23px;left:0px;right:0px;border:1px solid #7c4b10;border-top:0;border-radius:0 0 7px 7px;background:#fff;}
+.select_area.on .selected{border-radius:7px 7px 0 0}
+.select_area.on .select_lst{display:block}
+.select_area.on .ico_arrow{background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/ico_arrow.png) no-repeat;background-size:auto 12px;background-position:0 -6px;}
+
+
+
+/*Gnb*/
+.gnb{overflow:hidden;width:320px;height:100%;margin:0 auto}
+.gnb li{float:left;}
+.gnb a{display:block;height:44.5px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_en_gnb.png) no-repeat;background-size:auto 91px;text-indent:-9999px}
+.gnb .blank1 a{width:16px;background-position:0 0;cursor:none;}
+.gnb .menu1 a{width:96px;background-position:-16px 0;}
+.gnb .menu2 a{width:96px;background-position:-112px 0}
+.gnb .menu3 a{width:96px;background-position:-208px 0}
+.gnb .blank2 a{width:16px;background-position:-304px 0;cursor:none;}
+.gnb .blank1.active a, .gnb .blank1 a:active{background-position:0 -45px !important;}
+.gnb .menu1.active a, .gnb .menu1 a:active{background-position:-16px -45px !important;}
+.gnb .menu2.active a, .gnb .menu2 a:active{background-position:-112px -45px !important;}
+.gnb .menu3.active a, .gnb .menu3 a:active{background-position:-208px -45px !important;}
+.gnb .blank2.active a, .gnb .blank2 a:active{background-position:-304px -45px !important;}
+
+
+
+/*Header*/
+.spot{position:relative;height:380px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_en_bg_header.jpg) no-repeat 50% 0;background-size:auto 380px;}
+.spot .btn_video{position:absolute;top:215px;left:50%;width:70px;height:70px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/btn_mov.png) no-repeat 50% 0;background-size:auto 70px;margin-left:-35px;}
+
+
+
+/*download*/
+.download{position:relative;height:475px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_en_download.jpg) no-repeat 50% 0;background-size:auto 475px;}
+.d_area{position:relative;top:165px;left:1px;margin:0 auto;width:256px;height:132px;}
+.d_area .aos{width:256px;height:56px;cursor:pointer;}
+.d_area .ios{margin-top:19px;width:256px;height:56px;cursor:pointer;}
+.s_area{position:relative;top:228px;margin:0 auto;left:0px;width:196px;height:58px;}
+.s_area .line{float:left;width:55px;height:58px;cursor:pointer;}
+.s_area .facebook{float:left;margin-left:15px;width:55px;height:58px;cursor:pointer;}
+.s_area .twitter{float:left;margin-left:16px;width:55px;height:58px;cursor:pointer;}
+
+
+/*SNS*/
+.sec_sns{height:587.5px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_en_bg_sns.jpg) no-repeat 50% 0;background-size:auto 587.5px;}
+
+.pig2{position:relative;top:370px;right:35px;width:110px;height:101px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/pig2.png) no-repeat; z-index:30;background-size:auto 101px;}
+.gem{position:relative;top:320px;float:right;right:20px;width:58px;height:106px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/30gem.png) no-repeat;background-size:auto 106px;z-index:30;}
+
+/* .f_time-line-embed{position:relative;top:19px;margin:0 auto;left:28px;height:318px;overflow:hidden}
+.t_time-line-embed{position:relative;top:19px;margin:0 auto;left:29px;width:222px;height:318px;overflow:hidden} */
+.f_time-line-embed{    
+    position: absolute;
+    top: 120px;
+    left: 48px;
+    width: 223.5px;
+    height: 305px;
+    overflow:hidden;
+}
+.t_time-line-embed{    
+    position: absolute;
+    top: 124px;
+    left: 48px;
+    width: 222px;
+    height: 305px;
+    overflow:hidden;
+}
+
+
+.sec_sns .btn_area{position:relative;margin:0 auto;top:350px;left:0px;width:210px;height:91px;}
+.sec_sns .btn_area .like_f{display:block;width:210px;height:40px;}
+.sec_sns .btn_area .follow_t{display:block;margin-top:11px;width:210px;height:40px;}
+
+
+
+/*Overview*/
+.sec_overview{position:relative;height:685px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_en_bg_overview.jpg) no-repeat 50% 0;background-size:auto 685px;}
+
+.story,.introduction,.screenshot{position:relative;margin:0 auto;left:0.5px;width:268px;height:175px;}
+.story{top:64.5px;}
+.introduction{top:106.5px;}
+.screenshot{top:150px;}
+
+.btn_prev,.btn_next{display:block;left:50%;top:60px;width:34px;height:38px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_spot_sec.png) no-repeat 0px -37px;background-size:auto 75px; z-index:30}
+.btn_prev{margin-left:-160px;background-position:0px -37px}
+.btn_next{margin-left:125px;background-position:-34px -37px;}
+#intro_btn_prev1{
+    position: absolute;
+    top: 58px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    left:-25px;
+    z-index:999;
+    cursor:pointer;
+}
+ 
+#intro_btn_next1{
+    position: absolute;
+    top:58px;
+    right:-25px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    z-index:999;
+    cursor:pointer;
+}  
+#intro_btn_prev2{
+    position: absolute;
+    top: 58px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    left:-25px;
+    z-index:999;
+    cursor:pointer;
+}
+ 
+#intro_btn_next2{
+    position: absolute;
+    top:58px;
+    right:-25px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    z-index:999;
+    cursor:pointer;
+} 
+#intro_btn_prev3{
+    position: absolute;
+    top: 58px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    left:-25px;
+    z-index:999;
+    cursor:pointer;
+}
+ 
+#intro_btn_next3{
+    position: absolute;
+    top:58px;
+    right:-25px;
+    width: 34px;
+    height: 38px;
+    display:block;
+    overflow: hidden;
+    z-index:999;
+    cursor:pointer;
+} 
+a.bx-prev{
+    width:34px;
+    height:38px;
+    display:block;
+} 
+a.bx-next{
+    width:34px;
+    height:38px;
+    display:block;
+}  
+
+.game_src_area{overflow:hidden;position:relative;margin:0 auto;left:0px;width:262px;height:147.5px;}
+.game_src_lst1{width:9999px;position:absolute;top:0}
+.game_src_lst1 li{float:left;width:262px;height:100%}
+.game_src_lst1 img{width:262px;height:147.5px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-size:auto 147.5px;}
+
+.game_src_lst2{width:9999px;position:absolute;top:0}
+.game_src_lst2 li{float:left;width:262px;height:100%}
+.game_src_lst2 img{width:262px;height:147.5px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-size:auto 147.5px;}
+
+.game_src_lst3{width:9999px;position:absolute;top:0}
+.game_src_lst3 li{float:left;width:262px;height:100%}
+.game_src_lst3 img{width:262px;height:147.5px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-size:auto 147.5px;}
+
+.pig{position:absolute;top:370px;left:-50px;width:99px;height:90px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/pig.png) no-repeat; z-index:30;background-size:auto 90px;}
+.chuck{position:absolute;top:600px;left:265px;width:87px;height:80px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/chuck.png) no-repeat; z-index:50;background-size:auto 80px;}
+
+
+/*footer*/
+.footer{position:relative;margin:0 auto;height:175px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_en_bg_footer.jpg) no-repeat 50% 0;background-size:auto 175px;}
+.footer .btn_area{position:relative;margin:0 auto;top:85px;width:210px; height:20px;z-index:30;}
+.privacy{display:block;float:left;width:98px; height:20px;}
+.contact{display:block;float:left; margin-left:14px;width:98px; height:20px;}
+
+
+
+/* layer popup */
+/* common */
+.dimmed{position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;background:#000;filter:alpha(opacity=70);opacity:0.7;}
+.ly_wrap{*zoom:1;position:fixed;top:50%;width:100%;text-align:center;z-index:100}
+.ly_cont{position:relative;width:100%;height:100%}
+.btn_pop_ok{display:block;overflow:hidden;margin:10px 0 20px;display:inline-block;background:#3b589e;-webkit-border-radius:35px;-moz-border-radius:35px;border-radius:35px;box-shadow:0 4px 0 #1a3475;color:#fff369;width:100px;height:30px;line-height:30px;font-size:16px;font-weight:bold}
+.ly_wrap .align{display:inline-block;height:100%;vertical-align:middle}
+
+/* 동영상 */
+/* 동영상 */
+.ly_mov{position:fixed;top:50%;left:50%;z-index:110;text-align:center;z-index:100;width:309px;height:174px;margin:-87px 0 0 -154px}
+.btn_ly_close{position:absolute;top:-40px;right:0px; width:30px; height:30px; background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/ly_btn_cls.png) no-repeat;background-size:auto 30px;}
+
+
+
+/* 사전등록팝업 */
+.ly_wrap p{padding:20px 10px 5px}
+.ly_wrap em{display:block;font-size:15px;color:#5e789a;line-height:18px;}
+.ly_bg1{margin:0 auto;background:#fff;width:100%;height:auto;margin-top:-85px;}
+.ly_pop_tt{font-size:18px;color:#0a4999;font-weight:600;line-height:20px;}
+
+.ly_bg2{margin-top:-150px;margin:0 auto;width:100%;}
+.ly_bg2 .text_pop{margin:0 auto;margin-top:-150px;width:287px;height:316px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/en_google_pop.png) no-repeat;background-size:auto 316px;}
+.pop_email{position:relative;display:block;padding:0 5px;width:auto;height:20px;font-size:13px;color:#5e789a;top:100px;display:inline;}
+.btn_pop_go{position:relative;margin:0 auto;top:230px;display:block;overflow:hidden;width:145px;height:45px;}
+.ly_bg2 .btn_ly_cls{position:relative;margin:0 auto;top:10px;display:block;overflow:hidden;width:25px;height:25px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/ly_pop_cls.png) no-repeat;background-size:25px 25px}
+
+
+.pop_e_area{position:relative;margin:0 auto;width:230px;height:40px;margin-bottom:20px;}
+.pop_e_area .line{width:210px;height:40px;border:1px solid #0a4999;}
+.pop_e_area input{float:left;width:160px;height:40px;padding-left:10px;border:none;font-size:14px; font-family:arial; color:#778fc8;line-height:40px;background:rgba(0,0,0,0)}
+.pop_e_area .btn_register{position:absolute;float:right;right:0;display:block;overflow:hidden;padding:0 15px 0;background:#3b589e;-webkit-border-radius:35px;-moz-border-radius:35px;border-radius:35px;box-shadow:0 4px 0 #1a3475;color:#fff369;width:auto;height:38px;line-height:38px;font-size:18px;font-weight:bold;}
+.s_tt{display:block;font-size:13px;color:#5e789a;margin-bottom:20px;}
+
+.ly_pop_title{position:relative;margin:0 auto;top:0px;width:250px;height:100px;background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/en_pop_check.png) no-repeat;background-size:auto 100px;}
+
+
+.lypop p{padding:7px 0 17px}
+.lypop strong{font-size:30px;color:#fff;font-weight:600;line-height:35px;}
+
+.lypop span{line-height:20px;font-size:20px;color:#80a8cc;letter-spacing:-1px;font-weight:500}
+
+/*--------------------------------------------------------JP.ja--------------------------------------------------------*/
+/*Gnb*/
+html[lang=ja] .gnb li a{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_jp_gnb.png)}
+
+/*Download*/
+html[lang=ja] .download{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_jp_download.jpg)}
+
+/*Header*/
+html[lang=ja] .spot{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_jp_bg_header.jpg)}
+
+/*SNS*/
+html[lang=ja] .sec_sns{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_jp_bg_sns.jpg)}
+
+/*Overview*/
+html[lang=ja] .sec_overview{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_jp_bg_overview.jpg)}
+
+/*footer*/
+html[lang=ja] .footer{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_jp_footer.jpg)}
+
+/*POPUP*/
+html[lang=ja] .ly_bg2{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/jp_google_pop.png)}
+html[lang=ja] .ly_pop_title{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/jp_pop_check.png)}
+
+html[lang=ja] .pop_e_area{position:relative;margin:0 auto;width:280px;height:40px;margin-bottom:20px;}
+html[lang=ja] .pop_e_area .line{width:250px;height:40px;border:1px solid #0a4999;}
+html[lang=ja] .pop_e_area input{float:left;width:210px;height:40px;padding-left:10px;border:none;font-size:14px; font-family:arial; color:#778fc8;line-height:40px;background:rgba(0,0,0,0)}
+
+html[lang=ja] .sec_sns .btn_area .like_f{display:block;margin-top:10px;width:210px;height:40px;}
+html[lang=ja] .sec_sns .btn_area .follow_t{display:block;margin-top:0px;width:210px;height:40px;}
+
+html[lang=ja] .gem{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/jp_30gem.png)}
+
+/*--------------------------------------------------------TW.zh-TW--------------------------------------------------------*/
+/*Gnb*/
+html[lang=zh-TW] .gnb li a{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_tw_gnb.png)}
+
+/*Download*/
+html[lang=zh-TW] .download{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_tw_download.jpg)}
+
+/*Header*/
+html[lang=zh-TW] .spot{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_tw_bg_header.jpg)}
+
+
+/*SNS*/
+html[lang=zh-TW] .sec_sns{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_tw_bg_sns.jpg)}
+
+/*Overview*/
+html[lang=zh-TW] .sec_overview{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_tw_bg_overview.jpg)}
+
+/*footer*/
+html[lang=zh-TW] .footer{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_tw_bg_footer.jpg)}
+
+/*POPUP*/
+html[lang=zh-TW] .ly_bg2{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/tw_google_pop.png)}
+html[lang=zh-TW] .ly_pop_title{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/tw_pop_check.png)}
+
+html[lang=zh-TW] .gem{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/tw_30gem.png)}
+
+/*--------------------------------------------------------TH.th--------------------------------------------------------*/
+/*Gnb*/
+html[lang=th] .gnb li a{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_th_gnb.png)}
+
+/*Download*/
+html[lang=th] .download{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/open/mobile/m_th_download.jpg)}
+
+/*Header*/
+html[lang=th] .spot{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_th_bg_header.jpg)}
+
+/*SNS*/
+html[lang=th] .sec_sns{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_th_bg_sns.jpg)}
+
+/*Overview*/
+html[lang=th] .sec_overview{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_th_bg_overview.jpg)}
+
+/*footer*/
+html[lang=th] .footer{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/mobile/m_th_footer.jpg)}
+
+/*POPUP*/
+html[lang=th] .ly_bg2{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/th_google_pop.png)}
+html[lang=th] .ly_pop_title{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/th_pop_check.png)}
+
+html[lang=th] .gem{background-image:url(https://images.toast.com/toast/s629/angry/web/pre_regist/th_30gem.png)}
+
+@media screen and (min-width:600px) {
+.wrap{zoom:2;}
+.ly_cont{zoom:1.5;}
+	
+/* 동영상 */
+.ly_mov{position:fixed;top:50%;left:50%;z-index:110;text-align:center;z-index:100;width:309px;height:174px;margin:-87px 0 0 -230px}
+.btn_ly_close{position:absolute;top:-40px;right:-100px; width:30px; height:30px; background:url(https://images.toast.com/toast/s629/angry/web/pre_regist/ly_btn_cls.png) no-repeat;background-size:auto 30px;}
+}
+.notice{display:none}
+
+
+
+
